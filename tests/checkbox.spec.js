@@ -12,10 +12,10 @@ test("Handling check boxes elements", async({page})=>{
         "//input[@id='saturday' and @type='checkbox']"
     ]
 
-for(const locators of checkboxes){
-    await page.locator(locators).check();
-}
+    for(const locators of checkboxes){
+        await page.locator(locators).check();
+    }
 
-await page.waitForTimeout(5000) 
+    await page.waitForTimeout(5000) 
 
 })
